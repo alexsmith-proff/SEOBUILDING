@@ -1,0 +1,11 @@
+
+.educational{
+  position: relative;
+  &__img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 55.3rem;
+    height: 35.2rem;
+  }
+}

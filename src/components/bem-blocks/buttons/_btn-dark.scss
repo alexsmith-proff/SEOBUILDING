@@ -1,0 +1,16 @@
+.btn-dark{
+  background: #202020;
+  color: #fff;
+  padding: 25px 100px;
+  border-radius: 3px;
+  &:hover{
+    background: #fee442;
+    border: 1px solid #000;
+    color: #000;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn-dark{
+    padding: 20px 55px;
+  }
+}

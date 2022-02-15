@@ -1,0 +1,38 @@
+.certification {
+  background-color: #fafafa;
+  padding-bottom: 10rem;
+  &__title {
+    font-size: 4.6rem;
+    line-height: 5.6rem;
+    padding-top: 10rem;
+    margin-bottom: 11.5rem;
+  }
+  &__list {
+    display: grid;
+    //grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10rem;
+  }
+
+  // &__item {
+  // }
+  // &__img {
+  //   //max-width: 230px;
+  // }
+  @media screen and (max-width: 768px) {
+    &__title {
+      font-size: 22px;
+      line-height: 27px;
+      padding-top: 50px;
+      margin-bottom: 35px;
+    }
+    &__list {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    &__item {
+    }
+    &__img {
+      max-width: 135px;
+    }
+  }
+}

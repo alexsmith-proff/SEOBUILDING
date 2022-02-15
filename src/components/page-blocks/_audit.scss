@@ -1,0 +1,123 @@
+.audit{
+  background-color: #FAFAFA;
+  padding: 10rem 0 14rem;
+  &__title{
+    font-size: 4.6rem;
+    line-height: 5.6rem;
+    margin-bottom: 8rem;
+  }
+  &__content{
+    display: flex;
+  }
+  &__left{
+    width: 65%;
+    position: relative;
+  }
+  &__list{}
+  &__item{
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    font-weight: 600;
+    padding-left: 3rem;
+    margin-bottom: 25px;
+    position: relative;
+    &:before{
+      content: " ";
+      width: 1.3rem;
+      height: 1.3rem;
+      position: absolute;
+      left: 0;
+      top: 1rem;
+      background-color: #000;
+      border-radius: 50%;
+    }
+  }
+  &__stock{
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: -8rem;
+    right: 15rem;
+    &-text{}
+    &-price{
+      font-size: 5.4rem;
+      line-height: 6.6rem;
+      text-decoration: line-through;
+      margin-bottom: 1rem;
+    }
+    &-text{
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+      margin-right: 1.5rem;
+    }
+    &-mark{
+
+    }
+  }
+  &__right{
+    width: 35%;
+  }
+  &__form{}
+
+.stock-mark{
+  padding: 5.4rem 2.2rem 4.4rem;
+  background: url("../img/mark-bg.svg") no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+  &__price{
+    font-weight: 700;
+    color: #fff;
+    font-size: 44.3401px;
+    line-height: 39px;
+    margin-bottom: 1.6rem;
+  }
+  &__text{
+    font-weight: 900;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    color: #fff;
+  }
+}
+.form-feedback{
+  &__input{
+    padding-bottom: 1.0rem;
+    border-bottom: 1px solid #000;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    input{
+      border: none;
+      outline: none;
+    }
+  }
+  &__checkbox{
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    margin-bottom: 4rem;
+    input{
+      width: 2.0rem;
+      height: 2.0rem;
+      vertical-align:middle;
+      margin-right: 1rem;
+    }
+  }
+  &__btn{
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+    padding: 1.5rem 10rem;
+    background-color: transparent;
+    border: 5px solid #FFF738;
+    cursor: pointer;
+    &:hover{
+      transition: all .5s;
+      background-color: #FFF738;
+    }
+  }
+
+}
+
+}

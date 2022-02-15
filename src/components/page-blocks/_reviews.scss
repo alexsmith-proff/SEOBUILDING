@@ -1,0 +1,195 @@
+.reviews {
+    background-color: #000;
+    @media screen and (max-width: 320px) {
+        .container {
+            max-width: 240px;
+        }
+    }
+    &__title {
+        color: #fff;
+        font-size: 5.6rem;
+        line-height: 6.8rem;
+        padding-top: 13.5rem;
+        span {
+            color: #ffe442;
+        }
+    }
+    @media screen and (max-width: 1400px) {
+        &__title {
+            font-size: 42px;
+            line-height: 50px;
+            //margin-left: 20px;
+        }
+    }
+    @media screen and (max-width: 780px) {
+        &__title {
+            font-size: 26px;
+            line-height: 32px;
+            //margin-left: 20px;
+        }
+    }
+
+    &__slider {
+        padding-top: 18rem;
+        padding-bottom: 8rem;
+        // Стили для SlickSlider
+        .slider_wrap * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        .slick-slide {
+            margin: 0 3rem;
+        }
+        .slider-item img {
+            max-width: 100%;
+        }
+        /////////////////////////
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            z-index: 10;
+            font-size: 0;
+            width: 9.7rem;
+            height: 9.7rem;
+            cursor: pointer;
+            color: transparent;
+            border: none;
+            outline: none;
+        }
+        .slick-arrow.slick-prev {
+            left: -10rem;
+            background: url("../img/reviews-prev.png") no-repeat;
+            background-size: cover;
+        }
+        .slick-arrow.slick-next {
+            right: -10rem;
+            background: url("../img/reviews-next.png") no-repeat;
+            background-size: cover;
+        }
+        @media screen and (max-width: 1400px) {
+            .slick-arrow {
+                width: 50px;
+                height: 50px;
+            }
+            .slick-arrow.slick-prev {
+                left: -5rem;
+            }
+            .slick-arrow.slick-next {
+                right: -5rem;
+            }
+        }
+        @media screen and (max-width: 360px) {
+            .slick-arrow.slick-prev {
+                left: 10px;
+            }
+            .slick-arrow.slick-next {
+                right: 10px;
+            }
+        }
+        @media screen and (max-width: 320px) {
+            .slick-arrow {
+                width: 50px;
+                height: 50px;
+            }
+            .slick-arrow.slick-prev {
+                left: -10rem;
+            }
+            .slick-arrow.slick-next {
+                right: -10rem;
+            }
+        }
+    }
+}
+.slider {
+    &__item {
+        //width: 24.5rem;
+        height: 44.5rem;
+        border-radius: 1.5rem;
+        background-color: #777;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 1.5rem;
+    }
+    &__item-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    &__item-title {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    &__item-text {
+        color: #fff;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &__item-btn {
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        background-color: #fee442;
+        border-radius: 5px;
+        padding: 1rem 0;
+        cursor: pointer;
+    }
+    @media screen and (max-width: 1400px) {
+        &__item-title {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &__item-text {
+            font-size: 10px;
+            line-height: 10px;
+        }
+        &__item-btn {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        &__item-title {
+            font-size: 8px;
+            line-height: 10px;
+        }
+        &__item-text {
+            font-size: 6px;
+            line-height: 8px;
+        }
+        &__item-btn {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        &__item {
+            height: 435px;
+            border-radius: 15px;
+            background-color: #777;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 15px;
+        }
+        &__item-title {
+            font-size: 16px;
+            line-height: 28px;
+        }
+        &__item-text {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &__item-btn {
+            font-size: 12px;
+            line-height: 12px;
+            padding: 1a0px 0;
+        }
+    }
+}

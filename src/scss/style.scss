@@ -1,0 +1,31 @@
+@import 'base/*.scss';
+@import 'global/*.scss';
+@import 'fonts/*.scss';
+@import '**/_*.scss';
+@import '../components/**/*.scss';
+
+body{
+  font-family: 'Formular';
+  font-weight: 400;
+  font-size: 10px;
+  color: #000;
+  background-color: #fff;
+}
+
+.container{
+  max-width: 1410px;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1600px) {
+  .container{
+    max-width: 1230px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container{
+    max-width: 315px;
+    padding: 0 10px;
+  }
+}
+

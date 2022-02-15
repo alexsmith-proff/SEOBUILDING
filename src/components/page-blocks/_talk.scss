@@ -1,0 +1,121 @@
+.talk{
+    background-color: #FEE442;
+    padding-bottom: 60px;
+    border-bottom: 2px solid #000;
+    @media screen and (min-width: 769px) {
+        .container{
+            max-width: 1485px;
+        }
+    }
+    
+    &__list{
+        padding-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(435px, 1fr));
+        grid-gap: 30px;
+    }
+    &__item{
+        margin-bottom: 35px;
+    }
+    &__item-img{
+        img{
+            width: 173px;
+            height: 173px;
+            border-radius: 50%;
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 42px;
+        text-transform: uppercase;
+        padding-top: 30px;
+        margin-bottom: 5px;
+    }
+    &__subtitle{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 40px;
+
+    }
+    &__text{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    @media screen and (max-width: 768px) {
+        &__list{
+            display: none;
+            padding-top: 15px;
+        }
+        &__slider{
+            display: block;
+        }
+        &__item{
+            margin-bottom: 0px;
+        }
+        &__item-img{
+            img{
+                width: 105px;
+                height: 105px;
+            }
+        }
+        &__title{
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+        }
+        &__subtitle{
+            font-size: 10px;
+            line-height: 12px;
+            margin-bottom: 15px;
+    
+        }
+        &__text{
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+    @media screen and (min-width: 769px) {
+        &__slider{
+            display: none;
+        }
+    }
+    &__slider {
+        // Стили для SlickSlider
+        .slider_wrap * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        .slider-item img {
+            max-width: 100%;
+        }
+        /////////////////////////
+        .slick-arrow {
+            position: absolute;
+            z-index: 10;
+            font-size: 0;
+            width: 61px;
+            height: 61px;
+            cursor: pointer;
+            color: transparent;
+            border: none;
+            outline: none;
+        }
+        .slick-arrow.slick-prev {
+            display: none!important;
+        }
+        .slick-arrow.slick-next {
+            top: 40px;
+            right: 10px;
+            background: url("../img/reviews-next.png") no-repeat;
+            background-size: cover;
+        }
+        
+    }
+}
+@media screen and (min-width: 320px) {
+    .talk .container{
+        padding: 10px;
+    }
+}

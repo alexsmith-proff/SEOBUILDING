@@ -1,0 +1,115 @@
+.footer {
+    padding: 50px 0px;
+    background-color: #181818;
+    color: #fff;
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 150px;
+        //justify-items: center;
+    }
+    // &__item {
+    // }
+    &__item-phone {
+        margin-bottom: 30px;
+    }
+    &__item-phone a{
+        color: #fff;
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    &__item-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__item-title {
+        font-size: 26px;
+        line-height: 78%;
+        margin-bottom: 30px;
+    }
+    &__item-link a {
+        display: inline-block;
+        font-size: 16px;
+        //line-height: 210%;
+        margin-bottom: 13px;
+        color: #fff;
+        //border-bottom: 1px solid #fff;
+        text-decoration: underline;
+    }
+    &__copyright {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .footer {
+        &__list {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 150px;
+        }
+    }
+}
+@media screen and (max-width: 1100px) {
+    .footer {
+        &__list {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-gap: 150px;
+        }
+        &__item-phone a{
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}
+@media screen and (max-width: 950px) {
+    .footer {
+        &__list {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-gap: 150px;
+        }
+        &__item-phone a{
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+}
+@media screen and (max-width: 870px) {
+    .footer {
+        &__list {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-gap: 50px;
+        }
+        &__item-phone {
+            margin-bottom: 30px;
+        }
+        &__item-phone a{
+            color: #fff;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    
+        &__item-text {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__item-title {
+            font-size: 20px;
+            line-height: 78%;
+        }
+        &__item-link a {
+            font-size: 14px;
+        }
+        &__copyright {
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer{
+        &__copyright{
+            padding-top: 40px;
+        }
+    }
+}

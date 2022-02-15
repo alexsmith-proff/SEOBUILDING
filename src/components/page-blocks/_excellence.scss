@@ -1,0 +1,64 @@
+.excellence{
+  position: relative;
+  overflow-x: hidden;
+  &__circle-bg{
+    width: 18.3rem;
+    height: 18.3rem;
+    position: absolute;
+    top: 10rem;
+    left: -5rem;
+    background-color: #FFE442;
+    border-radius: 50%;
+  }
+  &:before{
+    content: "";
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 0;
+    right: 5rem;
+    background-color: #FFE442;
+    border-radius: 50%;
+  }
+  &:after{
+    content: "";
+    width: 25.8rem;
+    height: 25.8rem;
+    position: absolute;
+    bottom: 15rem;
+    right: 0;
+    background-color: #FFE442;
+    border-radius: 50%;
+  }
+  @media screen and (max-width: 1366px) {
+    &__circle-bg{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .container{
+      padding: 10px;
+    }
+    &:before{
+      width: 55px;
+      height: 55px;
+      top: 300px;
+      right: -30px;
+    }
+    &:after{
+      width: 100px;
+      height: 100px;
+      bottom: 160px;
+      right: -50px;
+    }
+  }
+  @media screen and (max-width: 380px) {
+    
+    &:before{
+      right: -30px;
+    }
+    &:after{
+      right: -60px;
+    }
+  }
+}

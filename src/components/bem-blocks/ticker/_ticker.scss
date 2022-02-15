@@ -1,0 +1,51 @@
+.ticker{
+  //display: flex;
+  &__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ticker_white-black &{
+      background-color: #000;
+    }
+    .ticker_black-yellow &{
+      background-color: #FEE442;
+    }
+  }
+  &__text{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    padding-right: 36px;
+    margin-right: 110px;
+    position: relative;
+    z-index: 100;
+    &:after{
+      content: "";
+      width: 27px;
+      height: 27px;
+      //background: url("../img/ticker-arrow_white.svg");
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -27px;
+      .ticker_black-yellow &{
+        background: url("../img/ticker-arrow_black.svg");
+      }
+      .ticker_white-black &{
+        background: url("../img/ticker-arrow_white.svg");
+      }
+    }
+    .ticker_white-black &{
+      color: #fff;
+    }
+    .ticker_black-yellow &{
+      color: #000;
+    }
+  }
+}
+@media screen and (max-width: 769px) {
+  .ticker{
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+.btn-skew{
+  font-weight: 700;
+  position: relative;
+  transform: skew(-20deg);
+  &:hover{
+    background-color: #fff;
+    color: #000;
+  }
+  span{
+    display: block;
+    transform: skew(20deg);
+  }
+}
+@media screen and (max-width: 480px) {
+  .btn-skew{
+      padding: 10px 15px;
+      span{
+        font-size: 16px;
+      }
+  }
+}

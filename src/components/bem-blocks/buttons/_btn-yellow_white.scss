@@ -1,0 +1,15 @@
+.btn-yellow_white{
+    background: #FFE442;
+    color: #000;
+    padding: 20px 100px;
+    border-radius: 3px;
+    &:hover{
+      background: #fff;
+      color: #000;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .btn-yellow_white{
+      padding: 20px 55px;
+    }
+  }
